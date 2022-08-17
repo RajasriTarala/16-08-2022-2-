@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+	int arr[5];
+	int i;
+	for(i=0;i<5;i++){
+	    scanf("%d",&arr[i]);
+		}
+		int j;
+	int flag;
+	printf("Prime numbers:\n");
+	for(i=0;i<5;i++)
+	{
+		
+		flag=0;
+		for(j=0;j<arr[i];j++)
+		{
+			if(arr[i]%j==0)
+			{
+				flag=1;
+				break;
+			}
+		}
+		if(flag=0)
+		    printf("%d\t", arr[i]);
+   }
+   return 0;
+}
